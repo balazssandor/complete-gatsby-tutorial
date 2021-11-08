@@ -12,7 +12,7 @@ const Blog = ({data}) => {
                       <Link to={node.slug}>
                         <h2>{node.frontmatter.title}</h2> 
                       </Link>
-                      <p>{node.frontmatter.date} | Read in {node.timeToRead} min</p>
+                      <p>{node.frontmatter.date} | Read in: {node.timeToRead} min</p>
                       </article>;
                     })) 
                 }

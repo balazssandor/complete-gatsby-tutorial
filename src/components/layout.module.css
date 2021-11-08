@@ -1,15 +1,17 @@
 .container {
     margin: auto;
     max-width: 500px;
-    font-family: sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
 .heading {
     color: rebeccapurple;
+    animation-duration: 0.09s;
+    animation-name: slidein;
 }
 .nav-links {
     display: flex;
-    list-style: none;
+    list-style: square;
     padding-left: 0;
 }
 .nav-link-item {
@@ -22,7 +24,19 @@
 .site-title {
     /* relative to root fontsize of the page */
     font-size: 3rem; 
-    color: gray;
+    color: rgb(0, 0, 0);
     font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+@keyframes slidein {
+    from {
+        margin-left: 85%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }

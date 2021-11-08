@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Balázs's Gatsby"
+    title: "SB's Gatsby Study"
   },
   /* Your site config here */
   plugins: ["gatsby-plugin-image",
@@ -19,6 +19,12 @@ module.exports = {
     }
   },
   "gatsby-plugin-mdx",
-  "gatsby-transformer-sharp"
+  "gatsby-transformer-sharp",
+   {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "gatsby-page",
+      },
+    },
 ],
 }
